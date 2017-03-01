@@ -10,7 +10,7 @@
 #define SRImagesDirectory      [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] \
                                  stringByAppendingPathComponent:NSStringFromClass([self class])]
 
-#define SRImageName(URLString) [URLString lastPathComponent]
+#define SRImageName(URLString) URLString    
 
 #define SRImagePath(URLString) [SRImagesDirectory stringByAppendingPathComponent:SRImageName(URLString)]
 
